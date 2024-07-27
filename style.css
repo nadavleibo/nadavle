@@ -1,0 +1,204 @@
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-color: #000000;
+  color: #ffffff;
+  height: 100vh;
+  background-image: url("stars .jpg");
+  background-repeat: repeat;
+  	cursor: none;
+
+}
+
+.top-container {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+label {
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+input[type="date"] {
+  font-size: 1em;
+  padding: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.circle-mask {
+  position: relative;
+  width: 420px; /* Adjust size as needed */
+  height: 420px; /* Adjust size as needed */
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Initially hidden */
+  background-color: #000000;
+  animation: rotate 34.17s linear infinite; /* Adjusted for 0.5% slower rotation */
+  clip-path: circle(50% at 50% 50%);
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #FFFFFF;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
+
+.cursor {
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: rgb(255,255,255);
+	mix-blend-mode: difference;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	transition: width 0.3s, height 0.3s, background-color 0.3s;
+	animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+	0% {
+		box-shadow: 0 0 10px 5px rgba(200,216,221,0.5);
+	}
+	100% {
+		box-shadow: 0 0 20px 10px rgba(187,207,214,0.9);
+	}
+}
+
+/* @keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-color: #000000;
+  color: #ffffff;
+  height: 100vh;
+  background-image: url("stars.jpg");
+  background-repeat: repeat;
+  cursor: none;
+}
+
+.top-container {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+label {
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+input[type="date"] {
+  font-size: 1em;
+  padding: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cursor {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, background-color 0.3s;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px 5px rgba(200, 216, 221, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 20px 10px rgba(187, 207, 214, 0.9);
+  }
+}
+  
+}
+} */

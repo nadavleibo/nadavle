@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Your Star Map</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-container">
+      <h1>Create Your Star Map</h1>
+      <div class="form-container">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" />
+        <button onclick="generateStarMap()">Generate</button>
+      </div>
+    </div>
+    <div class="image-container" id="image-container">
+      <!-- The generated star map image will be inserted here -->
+    </div>
+    <div class="cursor"></div>
+
+    <script src="magnify.js"></script>
+    <script src="sketch.js"></script>
+    <script src="cursor.js"></script>
+  </body>
+</html>
